@@ -1,0 +1,19 @@
+
+<!DOCTYPE html>
+{% extends 'common.html'%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+</head>
+<body>
+    {% block hai%}
+    <form action="hey" method="post">
+        {% csrf_token %}
+        <input type="number" name="alpha"><br/>
+        <input type="number" name="beta"><br/>
+        <input type="submit" value="Calculate">
+    </form>
+    {%endblock%}
+</body>
+</html>
